@@ -1,0 +1,1529 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* styles.css */
+
+.centered-container {
+    max-width: 3000px;
+
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html {
+	font-family: "sofia-pro", sans-serif;
+	font-style: normal;
+	background-color: #f9fcf6;
+	/*tutorial from https://www.youtube.com/watch?v=-yApsBs5rR4*/
+	scroll-behavior: smooth;
+}
+body::before {
+    content: "";
+    position: fixed; /* Fix position to cover the entire viewport */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place it behind the content */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Apply blur filter */
+    filter: blur(4px);
+}
+
+/* Default styles for headings */
+h1, .h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: "sofia-pro", sans-serif;
+    font-style: normal;
+    color: #004260;
+	margin: 2rem 4rem;
+}
+
+h2,.h2 {
+    margin-top: 2rem;
+    margin-left:8rem;
+	margin-right:8rem;
+
+    font-family: 'sofia-pro', sans-serif;
+	font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #004260;
+}
+
+h3, .h3 {
+	font-family: 'sofia-pro', sans-serif;
+    font-size: 1.3rem;
+	margin: 2rem 4rem;
+	color: #004260;
+
+}
+
+
+
+h4, .h4 {
+	font-weight: 400;
+	font-family: 'sofia-pro', sans-serif;
+	margin: 0rem 4rem;
+	color: #004260;
+    font-size: 1rem;
+}
+
+
+h5, .h5 {
+	font-weight: 400;
+	font-family: 'sofia-pro', sans-serif;
+	margin: 1rem 4rem;
+	color: white;
+    font-size: 1rem;
+}
+
+
+h6, .h6{
+	font-weight: 500;
+	font-family: 'sofia-pro', sans-serif;
+	margin: 0rem 4rem;
+	color: #004260;
+    font-size: 1rem;
+}
+
+p, .p{
+	font-size: 1rem;
+	font-family: 'sofia-pro', sans-serif;
+	color: #004260;
+	margin: 0rem 4rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li, .li{
+	font-size: 1rem;
+	font-family: 'sofia-pro', sans-serif;
+	color: #004260;
+	padding: 0rem;
+	margin: 0.5rem 4rem;
+    line-height: 1.5rem;
+    
+}
+@media (max-width: 768px) {
+	* {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		transition: none !important;
+	}
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 1.25rem; /* Adjust font size for h1 on smaller screens */
+         /* Adjust letter spacing for h1 on smaller screens */
+         margin:16px;
+         padding:0;
+    }
+
+    h2, .h2 {
+        font-size: 1rem; /* Further reduced font size for h2 on smaller screens */
+        line-height: 1; /* Adjust line height for h2 on smaller screens */
+        margin: 16px;
+        padding:0;
+    }
+
+    h3, .h3 {
+        font-size: 1rem; /* Further reduced font size for h2 on smaller screens */
+        line-height: 1.3; /* Adjust line height for h2 on smaller screens */
+        margin: 16px;
+        padding:0;
+    }
+    h5, .h5{
+        font-size: 1rem; /* Further reduced font size for h2 on smaller screens */    
+        margin: 16px;
+        margin-top:32px;
+        color: #ecf3ff;
+        padding:0;
+        font-weight: 300;
+    }
+
+    h6, .h6{
+        font-size: 1rem; /* Further reduced font size for h2 on smaller screens */    
+        margin: 0px 15px;
+        color: #004260;
+        padding:0;
+        font-weight: 500;
+    }
+    p, .p{
+        font-size: 1rem; /* Further reduced font size for h2 on smaller screens */
+        line-height: 1.3; /* Adjust line height for h2 on smaller screens */
+        margin: 16px;
+        margin-bottom: 0px;
+        padding:0;
+    }
+    li, .li{
+        font-size: 1rem;
+        font-family: 'sofia-pro', sans-serif;
+        color: #004260;
+        padding-top: 8px;
+        margin: 0px 16px;
+    }
+
+
+    /* Adjust other headings as needed */
+}
+
+
+/**************** Navigation Menu ************/
+
+.responsive-container {
+	margin: 0rem 5vw;
+}
+
+
+header a {
+    font-family: "sofia-pro", sans-serif;
+    text-decoration: none;
+}
+
+/* Set the initial color */
+#myHeader {
+    background-color:#e5ecef; /* Initial color */
+    transition: background-color 0.3s ease;
+}
+
+
+/*  rgb(221, 235, 253)/
+/* Additional styles for the menu bar */
+header {
+    /* Your existing styles for the menu bar */
+    margin: 0px 2rem;
+    padding: 16px;
+    padding-left: 2rem;
+
+    font-family: "sofia-pro", sans-serif;
+    border-radius: 24px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 75px; /* Note: You need to specify 'px' for height */
+    z-index: 999;
+}
+
+/* Your existing styles for the menu links, icons, etc. */
+/* ... */
+
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-family: "sofia-pro", sans-serif;
+}
+
+ul a {
+    color: #004260;
+    font-family: "sofia-pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* Add the transition effect to the header links */
+ul a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: #004260; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #FFF8E6,
+        #004260
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #FFF8E6,
+        #004260
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+/* Add hover effect to the header links */
+ul a:hover::after {
+    left: 0%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+#hamburger-icon {
+    margin: auto;
+    display: none;
+    cursor: pointer;
+    position: flex;
+    right:20px;
+}
+
+#hamburger-icon div {
+    width: 25px; /* Reduced width for responsiveness */
+    height: 4px; /* Reduced height for responsiveness */
+    background-color: #004260;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+    top:40px;
+    height:140px;
+    align-items: center;
+    justify-content: center;
+border-radius: 0px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 200px; /* Adjusted top position for responsiveness */
+    left: 0;
+    height: calc(100vh - 100px); /* Adjusted height for responsiveness */
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 20px; /* Reduced margin for responsiveness */
+}
+
+@media (max-width: 768px) {
+
+    header {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 50px!important;
+
+    }
+    header ul {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    
+    .logo img {
+        max-width: 200px; /* Adjust the maximum width for the logo */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    }
+    .ul a {
+        border-color: white;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;   
+             border-color: white!important;
+
+        align-items: center;
+        font-family: "sofia-pro", sans-serif;
+    }
+    
+    ul a {
+        color: #004260;
+        font-family: "sofia-pro", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        position: relative;
+        border-color: #004260; /* Add border color */
+
+    }
+    
+    ul li {
+        padding: 5px;
+        margin-left: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 350px) {
+    
+    header ul {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    
+    .logo img {
+        max-width: 150px; /* Adjust the maximum width for the logo */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    }
+
+}
+@media  (max-width: 300px) {
+
+    
+    .logo img {
+        max-width: 120px; /* Adjust the maximum width for the logo */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    }
+}
+
+
+
+
+
+
+
+
+/***    Home page            ***/
+
+/* Media query for screens smaller than 1000px (typical mobile devices) */
+@media (max-width: 768px) {
+
+    .index-container{
+        margin-top: 6rem!important;
+        min-height: 80vh!important;
+    }
+    
+
+    .index-container .animation-container {
+        
+    align-items: left;
+    justify-content: left;
+   padding: 16px;
+    }
+
+}
+
+
+
+
+.index-container {
+
+	background: hsla(220, 100%, 19%, 1);
+
+background: linear-gradient(240deg, hsla(220, 100%, 19%, 1) 0%, hsla(236, 50%, 60%, 1) 100%);
+
+background: -moz-linear-gradient(35deg, hsla(220, 100%, 19%, 1) 0%, hsla(236, 50%, 60%, 1) 100%);
+
+background: -webkit-linear-gradient(120deg, hsla(220, 100%, 19%, 1) 0%, hsla(236, 50%, 60%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#004260", endColorstr="#656CCC", GradientType=1 );
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#004260", endColorstr="#5460F9", GradientType=1 );
+
+    margin:2rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    min-height: 80vh;
+	border-radius: 2rem;
+}
+
+
+
+.index-container .context-container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: rem;
+}
+
+.index-h2 {
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 1rem 0;
+    padding: 1%;
+    line-height: 5rem;
+    letter-spacing: unset;
+    color: #ecf3ff;
+    text-align: center;
+}
+
+.index-container p {
+    font-size: 2rem;
+    margin: 0.25rem 0;
+    color: #ecf3ff;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 5rem;
+}
+
+
+.animation-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem; /* Adjust to your desired height */
+}
+
+.underline-container {
+    position: relative;
+	
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0; /* Adjust to your desired underline thickness */
+    background-color: #ecf3ff; /* Adjust to your desired underline color */
+    animation: typing 2s linear infinite; /* Adjust the animation duration */
+	
+}
+
+.text {
+	font-family: "sofia-pro", sans-serif; /* Set the same font family as used in h1 */
+	font-weight: 400;
+	font-size: 2rem;
+	margin: 0.25rem 0;
+	letter-spacing: unset;
+	color: #ecf3ff;
+	border-bottom: 4px solid #ecf3ff; /* Adjust the color and thickness of the underscore */
+	padding-bottom: 0.25rem;
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .index-h2 {
+        font-size: 2.5rem;
+        margin: 0.5rem 0;
+        padding: 1%;
+        line-height: 3rem;
+    }
+
+    .index-container p {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+	.text {
+		font-size: 1rem;
+		margin-bottom: 0px;
+     
+    align-items: left;
+    justify-content: left;   
+	}
+	.underline {
+		font-size: 10px; 
+
+	}
+
+	.two-column-container {
+		flex-direction: column; /* Stack columns vertically for smaller screens */
+	}
+	
+    .left-column {
+        flex: 2; /* Occupy one-third of the container's width */
+        margin: 0rem;
+        margin-left: 16px!important;
+        margin-right:16px!important;
+        background-color: #DADFE8; /* Background color for the left column */
+        border-radius: 45px;
+    }
+    .left-column h2{
+        margin:8px!important;
+        padding:8px!important;
+    }
+	.right-column{
+	display: none;	
+}
+	.right-column img {display: none;
+	}
+	
+	.spacer {
+		margin: 1rem;
+	}
+	
+	.testimonial-column {
+        margin-bottom: 32px!important;
+            flex-direction: row-reverse; /* Arrange columns horizontally */
+            }
+            
+	
+	
+    
+	.right-column-testimonial{
+		display:block;
+		}
+	}
+	.left-column-testimonial {
+		flex: 2; /* Let both columns take up full width */
+		margin: 16px!important; /* Reduce margin for spacing */
+	}
+
+	.h2{
+		font-size: 30px;
+	}
+	.h3{
+		font-size:8px;
+	}	
+
+
+
+
+
+
+
+@keyframes typing {
+    0%, 100% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+
+
+	
+}
+
+.work {
+	margin-top: 7rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 4rem;
+
+
+}
+
+@media (max-width: 768px){
+    .work {
+        
+	margin-top: 6.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+    }
+}
+
+.aboutme {
+	margin: 8rem;
+    margin-bottom: 4rem;
+}
+
+.aboutme h1.aboutme{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width:1000px){
+    .aboutme{
+        margin:16px;
+    }
+
+    .aboutme h1.aboutme{
+        margin-top:6rem;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+
+}
+
+section {
+	position: static;
+	margin-bottom: 4rem;
+}
+section:before {
+	content: attr(data-text);
+}
+
+
+.empty-div {
+	height: 8vw;
+}
+
+
+
+
+
+
+
+
+
+/* Create a container for the two columns */
+.two-column-container {
+    display: flex;
+    flex-direction: row; /* Arrange columns horizontally */
+    align-items: center; /* Vertically center items */
+}
+
+/* Style for the left column (text) */
+.left-column {
+    flex: 2; /* Occupy one-third of the container's width */
+    margin: 0rem;
+    margin-left: 4rem;
+    margin-right:4rem;
+    background-color: rgb(221, 244, 253); /* Background color for the left column */
+    border-radius: 45px;
+}
+.left-column h2{
+    margin:0rem;
+    padding:2rem;
+}
+
+/* Style for the right column (image) */
+.right-column {
+    flex: 0.75; /* Occupy two-thirds of the container's width */
+    padding: 0px; /* Add padding for spacing */
+    margin-right: 8rem;
+}
+
+/* Ensure the image doesn't exceed its container */
+.right-column img {
+    max-width: 430px;
+    height: 370px;
+    display: block;
+    border-radius: 90rem;
+
+}
+
+
+
+.spacer {
+margin: 4rem;
+}
+
+.testimonial-column {
+display:flex;
+flex-direction: row; /* Arrange columns horizontally */
+align-items: left; /* Vertically center items */
+margin: 0, !important;
+}
+
+.right-column-testimonial {
+flex: 1.3;
+margin: 1rem; /* Adjust margin as needed */
+background-color:rgb(221, 244, 253);
+border-radius: 45px;
+}
+
+/* Style for the left column (text) */
+.left-column-testimonial {
+flex: 1.75; /* Add "fr" as the unit for flex */
+margin: 4rem; /* Adjust margin as needed */
+background-color: rgb(221, 244, 253);
+border-radius: 45px;
+}
+
+
+
+
+/* Media query for screens with a maximum width of 768px (typical mobile screen width) */
+@media (max-width: 768px) {
+.project-link {
+    flex-basis: calc(50% - 2rem);
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 400px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding:0;
+    margin: 1rem;
+}
+
+p {
+    font-size: 16px;
+}
+}
+
+
+.button-container {
+display:flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 0;
+}
+
+
+/* Style for the button */
+.portfolio-button {
+display: flex;
+padding: 1rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+background-color: #004260;
+color: #fff;
+font-weight: 200;
+font-size: 1.5rem!important;
+text-decoration: none;
+border: none;
+border-radius: 60px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.portfolio-button:hover {
+background-color: #1e7fcf;
+}
+
+@media (max-width: 768px) {
+
+    .portfolio-button {
+        margin-bottom: 4.5rem;
+        }
+}
+
+
+
+/****************** WORK PAGE *******************/
+
+.project-list {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+}
+
+/* Style for individual project items */
+.project-item {
+    /* Add styling for individual project items here */
+    padding: 4rem;
+    padding-top: 0;
+    margin-left: 4rem;
+    text-align: left;
+    display: block;
+    position: relative;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition properties here */
+}
+
+/* Style the image within each project item */
+.project-item img {
+    max-width: 80%; /* Ensure images don't exceed their container */
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    filter: grayscale(30%); /* Apply grayscale filter by default */
+    transition: filter 0.4s ease; /* Add a smooth transition effect for the filter */
+}
+
+/* Style the summary text within each project item */
+.project-item .summary {
+    /* Add styling for the summary text here */
+    margin: 0;
+}
+
+/* Style for filter buttons */
+.filter-buttons {
+    text-align: left;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    margin-left: 8rem;
+    padding-bottom: 0;
+}
+
+.filter-button {
+    background-color: #004260;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Style for filter buttons with data-active="true" */
+.filter-button[data-active="true"] {
+    background-color: #1e7fcf; /* Active button color */
+}
+
+/* Add an "active" class for selected buttons */
+.filter-button.active {
+    background-color: #1e7fcf; /* Active button color */
+}
+
+/* Add hover effect to buttons */
+.filter-button:hover {
+    background-color: #1e7fcf; /* Darker color on hover */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Move the project item up slightly on hover */
+}
+
+/* Add hover effect to keycards and summary text without changing colors */
+/* Apply the filter when hovering */
+.project-item:hover img {
+    filter: brightness(100%) grayscale(0); /* Brighten and grayscale on hover */
+}
+
+.project-item:hover .keycards {
+    transform: translateY(-5px); /* Move the keycards up slightly on hover */
+    transition: transform 0.4s ease;
+}
+
+.project-item:hover .summary {
+    transform: translateY(-5px); /* Move the summary text up slightly on hover */
+    transition: transform 0.4s ease;
+}
+
+.project-item.transition-effect {
+    transition: opacity 0.3s ease, transform 0.45s ease; /* Combine both transition properties */
+}
+
+.project-item h1.no-margin {
+    font-family: 'sofia-pro', sans-serif;
+    font-size: 1.3rem;
+    color: #004260;
+    margin: 0; /* Remove margin */
+    
+    margin-top: 10px;
+    padding: 0; /* Remove padding */
+}
+
+.project-item h2.no-margin {
+    font-family: 'sofia-pro', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #004260;
+    margin-left: 0px; /* Remove margin */
+    margin-top: 10px; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.learn-more-button {
+    text-align: left; /* Center the button horizontally */
+    margin-top: 20px; /* Add margin as needed */
+}
+
+.learn-more-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004260; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.learn-more-button a:hover {
+    background-color: #1e7fcf; /* lighten color on hover */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Mobile-specific styles within the media query */
+@media (max-width: 768px) {
+    .project-list {
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+    }
+
+    .project-item {
+        padding: 2rem; /* Reduced padding for smaller screens */
+        margin: 0; /* Remove margin for smaller screens */
+    }
+
+    .filter-buttons {
+        margin:0;
+        margin-left: 36px;
+        margin-top: 1rem; /* Reduced margin from the top */
+        text-align: left; /* Left-align buttons */
+        padding-left: 0; /* Reduced padding for spacing */
+        display: grid; /* Use grid layout for filter buttons */
+        grid-template-columns: repeat(2, 1fr); /* Two columns for filter buttons */
+    }
+
+    .filter-button {
+            padding: 12px 12px; /* Smaller button size for mobile */
+        margin: 4px; /* Adjust margin for spacing */
+    }
+    /* Mobile-specific styles within the media query */
+
+
+
+    .project-item img {
+        max-width: 300px; /* Set the maximum width to 300 pixels */
+        height: 200px; /* Set the height to 150 pixels */
+        display: block;
+        border-radius: 15px;
+    }
+
+}
+
+/****************** Portfolio page *******************/
+
+
+
+
+
+/** Work template styles**/
+
+    /* CSS for the image */
+    .img-container {
+        text-align: center; /* Center the image horizontally */
+        margin-top: 4rem;
+    }
+    
+    .img-responsive {
+        max-width: 80%;
+        height: auto; /* Automatically adjust the height based on the aspect ratio */
+        max-height: auto; /* Set a maximum height if needed */
+        padding: 16px;
+        border-radius: 32px;
+    }
+    .img-responsive2 {
+        max-width: 100%;
+        height: auto; /* Automatically adjust the height based on the aspect ratio */
+        max-height: auto; /* Set a maximum height if needed */
+        padding: 16px;
+        border-radius: 32px;
+    }
+    
+    
+    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+    @media (max-width: 768px) {
+        .img-responsive {
+            max-width: auto;
+            max-height: auto; /* Adjust the maximum height for smaller screens */
+            border-radius: 16px;
+        }
+
+        .img-responsive2 {
+            max-width: auto;
+            max-height: auto; /* Adjust the maximum height for smaller screens */
+            border-radius: 16px;
+        }
+    
+        .img-container {
+            text-align: center; /* Center the image horizontally */
+            margin-top: 0rem;
+        }
+    }
+
+
+
+@media (max-width: 768px){
+
+}
+
+    
+    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens here */
+    .project-item {
+        padding: 1rem; /* Reduced padding for smaller screens */
+        margin-left: 0; /* Remove margin-left */
+    }
+
+    .filter-buttons {
+        margin-top: 1rem; /* Reduced margin for spacing */
+    }
+}
+
+
+/* Common styles for desktop and mobile */
+.img-responsiveport {
+    max-width: 70%;
+    height: auto; /* Automatically adjust the height based on the aspect ratio */
+    max-height: auto; /* Set a maximum height if needed */
+    padding: 0;
+    margin: 0;
+}
+
+.img-container {
+    text-align: center; /* Center the image horizontally */
+    margin: 1.2rem;
+    padding: 0;
+}
+
+.fifty-fifty-container {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+}
+
+.fifty-fifty-container-left {
+    flex: 1;
+    margin-left: 4rem;
+}
+
+.fifty-fifty-container-right {
+    flex: 1;
+    margin-right: 4rem;
+}
+
+.textcontainer {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.textcontainer h1 {
+    margin-top: 0rem;
+}
+
+.textcontainer-left {
+    flex: 1;
+    margin-left: 8rem;
+    margin-top: 0;
+    padding: 0;
+}
+
+.textcontainer-right {
+    flex: 3;
+    margin-right: 7rem;
+    margin-top: 6px;
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .textcontainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .textcontainer-left {
+        flex: 1;
+        padding: 0;
+        margin: 0;
+        margin-left: 16px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .textcontainer-right {
+        margin: 16px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+.port-container {
+    display: flex;
+    margin: 0;
+}
+
+.port-left-section {
+    flex: 2;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-bottom: 0rem;
+}
+
+.port-left-section h1 {
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+    padding: 0;
+    font-weight: 800;
+    color: #004260;
+}
+
+.port-left-section h2 {
+    font-family: 'Playfair Display';
+    font-size: 1rem;
+    margin-left: 4rem;
+    font-weight: 600;
+    color: #004260;
+    padding: 0;
+}
+
+.port-right-section {
+    flex: 1;
+    padding-top: 0rem;
+    margin-top: 8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-right: 8rem;
+}
+
+/* Hide the checkboxes */
+.accordion-toggle {
+    display: none;
+}
+
+/* Style the accordion titles */
+.accordion-title {
+    cursor: pointer;
+    padding: 6px;
+    width: 100%;
+    font-family: "sofia-pro", sans-serif;
+    border: 0;
+    background-color: #f9fcf6;
+    border-top: 1px solid #ccc;
+    color: #004260;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    outline: none;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s; /* Add transition for smoother hover effect */
+}
+
+/* Style the accordion content */
+.accordion-content {
+    font-family: "sofia-pro", sans-serif;
+    color: #4c575b;
+    font-size: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out; /* Simplified easing */
+}
+
+.accordion-content li {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-family: "sofia-pro", sans-serif;
+    color: #4c575b;
+}
+
+.accordion-content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-family: "sofia-pro", sans-serif;
+    color: #4c575b;
+}
+
+/* Style the plus sign when accordion is not active */
+.accordion-title:after {
+    content: "\002B"; /* "+" symbol */
+    font-weight: bold;
+    transform: rotate(0deg); /* Rotate 0 degrees */
+    transition: transform 0.4s ease; /* Add transition for smooth rotation */
+}
+
+/* Rotate the plus sign to minus when accordion is checked */
+.accordion-toggle:checked + .accordion-title:after {
+    content: "\002D"; /* "-" symbol */
+    transform: rotate(0deg); /* Rotate 0 degrees to keep it static */
+}
+
+/* Show content when the checkbox is checked */
+.accordion-toggle:checked + .accordion-title + .accordion-content {
+    max-height: 1000px; /* Adjust to fit your content or set a maximum value */
+    padding: 16px; /* Add padding when content is expanded */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .port-container {
+        flex-direction: column;
+    }
+
+    .port-right-section {
+        order: 2;
+    }
+
+    .accordion-title {
+        width: auto;
+    }
+
+    .accordion-title:after {
+        float: none;
+    }
+
+    .port-left-section {
+        flex: 1;
+        margin-top: 4rem;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 0rem;
+    }
+
+    .port-left-section h1 {
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        padding: 0;
+        margin: 16px;
+        font-weight: 800;
+        color: #004260;
+    }
+
+    .port-left-section h2 {
+        font-family: 'Playfair Display';
+        font-size: 1.3rem;
+        margin: 16px;
+        font-weight: 600;
+        color: #004260;
+        padding: 0;
+    }
+
+    .port-right-section {
+        flex: 1;
+        padding: 16px;
+        margin: 0px;
+    }
+
+    /* Adjusted styles for smaller screens */
+    .accordion-title {
+        padding: 4px;
+    }
+
+    .accordion-content p {
+        margin-bottom: 0px;
+    }
+}
+
+/* Additional Styles */
+.portfoliomargins {
+    margin: 0 12rem;
+    padding: 0;
+    margin-bottom: 4rem;
+}
+
+.portfoliomargins p {
+    margin: 1rem 0rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.portfoliomargins h1 {
+    margin: 1rem 0rem;
+    padding: 0;
+}
+
+.portfoliomargins li {
+    margin: 16px 16px;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    .portfoliomargins {
+        margin: 0 16px;
+    }
+}
+
+
+
+
+
+
+/*f page*/
+
+.basic-container{
+    margin-top: 1rem;
+}
+
+.basic-container h3 {
+	font-family: 'sofia-pro', sans-serif;
+    font-size: 1.3rem;
+	margin: 0rem 4rem;
+	color: #004260;
+
+}
+.basic-container p {
+
+    margin-top: 1rem;
+}
+
+@media  (max-width: 768px) {
+
+    .basic-container h3 {
+	font-family: 'sofia-pro', sans-serif;
+    font-size: 1rem;
+    margin: 0rem 16px;
+	color: #004260;
+
+    }    
+
+    .basic-container p{
+        margin-top: 16px;
+    }
+}
+/* Style for the toggle button */
+
+.toggle-button {
+    display: none; /* Hide the actual checkbox */
+}
+
+/* Style for the slider container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px; /* Reduced by 10% */
+    height: 30.6px; /* Reduced by 10% */
+    float: right; /* Float the container to the right */
+}
+
+/* Style for the slider track */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 30.6px; /* Reduced by 10% */
+}
+
+/* Style for the slider thumb */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 23.4px; /* Reduced by 10% */
+    width: 23.4px; /* Reduced by 10% */
+    left: 4px;
+    bottom: 3.4px; /* Adjusted for centering */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%; /* Rounded slider thumb */
+}
+
+/* Style for the checked (on) state of the slider */
+.toggle-button:checked + .slider {
+    background-color: #1e7fcf;
+}
+
+/* Style for the checked (on) state of the slider thumb */
+.toggle-button:checked + .slider:before {
+    -webkit-transform: translateX(23.4px); /* Adjusted for smaller thumb */
+    -ms-transform: translateX(23.4px); /* Adjusted for smaller thumb */
+    transform: translateX(23.4px); /* Adjusted for smaller thumb */
+}
+
+.hidden-content {
+    display: none;
+}
+
+
+
+
+
+/**************** FOOTER*********/
+
+/* Use a class selector to style the specific footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -40px; /* Adjust this value based on the footer's height */
+}
+
+.my-footer {
+    justify-content: left;
+    
+    align-items: left;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom:0;
+    background-color: #004260;
+    color: #fce9ff !important;
+    margin-top: 0rem; /* Push the footer to the bottom */
+}
+
+.my-footer h1 {
+    color:#fff;
+    font-size: 1rem;
+        margin: 1rem 2rem;
+    font-family: 'sofia-pro', sans-serif;
+font-style: normal;
+font-weight:100;
+}
+
+.footer-container {
+    background-color: #faf9f2; /* Set your desired background color */
+    padding: 1rem 0; /* Add padding as needed */
+}
+
+/* Add this CSS to style the responsive container inside the footer container */
+.responsive-container {
+    max-width: 1800px; /* Set your desired max width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* You can adjust the styles for the footer as needed */
+.my-footer {
+    text-align: left; /* Center-align the content */
+    color: #004260; /* Set your desired text color */
+    font-size: 1rem; /* Set your desired font size */
+}
+
+
+@media (max-width: 768px) {
+    .my-footer {
+        text-align: center; /* Center-align the content on smaller screens */
+        margin-top: 2rem; /* Reduce the top margin for smaller screens */
+    }
+
+    .my-footer h1 {
+        font-size: 0.9rem; /* Reduce the font size for smaller screens */
+    }
+}
+/*********** SCREENS BIGGER THAN 855PX************/
+
+
