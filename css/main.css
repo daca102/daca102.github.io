@@ -51,7 +51,7 @@ h1, .h1 {
 	margin: 2rem 4rem;
 }
 
-h2,.h2 {
+h2, .h2 {
     margin-top: 2rem;
     margin-left:8rem;
 	margin-right:8rem;
@@ -59,7 +59,7 @@ h2,.h2 {
     font-family: 'sofia-pro', sans-serif;
 	font-style: normal;
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     color: #004260;
 }
 
@@ -114,12 +114,12 @@ p, .p{
 
 li, .li{
 	font-size: 1rem;
-	font-family: 'sofia-pro', sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
     font-weight:500;
 	color: #004260;
 	padding: 0rem;
-	margin: 0.5rem 4rem;
-    line-height: 1.75rem;
+	margin: 0rem 4rem;
+    line-height: 1.5rem;
     
 }
 @media (max-width: 768px) {
@@ -243,7 +243,7 @@ ul {
 ul a {
     color: #004260;
     font-family: "sofia-pro", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     position: relative;
 }
@@ -325,12 +325,14 @@ ul a:hover::after {
     top:40px;
     height:140px;
     align-items: center;
+    
     justify-content: center;
 border-radius: 0px;
 }
 
 .mobile-menu {
     display: none;
+    
     position: absolute;
     top: 200px; /* Adjusted top position for responsiveness */
     left: 0;
@@ -350,6 +352,7 @@ border-radius: 0px;
     }
     header ul {
         display: none;
+
     }
 
     #hamburger-icon {
@@ -383,10 +386,7 @@ border-radius: 0px;
 
     }
     
-    ul li {
-        padding: 5px;
-        margin-left: 10px;
-    }
+
 }
 
 
@@ -937,7 +937,7 @@ background-color: #1e7fcf;
 
 .project-item h2.no-margin {
     font-family: 'sofia-pro', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: #004260;
     margin-left: 0px; /* Remove margin */
