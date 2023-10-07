@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daniel Chen's Portfolio</title>
+	<link rel="stylesheet" href="../css/main.css">
+
+
+	<!-- font from Adobe Fonts sofia pro --->
+	<link rel="stylesheet" href="../css/sofiapro.css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
+	
+	<!--Tutorial from https://www.youtube.com/watch?v=kEf1xSwX5D8-->
+	<link rel="shortcut icon" type="image/png" href="../images/web_icon.png">
+
+    <script src="../javascript/casestudies.js" defer></script>
+    <meta name="robots" content="noindex">
+
+
+</head>
+<style>
+</style>
+
+
+<header id="myHeader">
+    <div class="logo">
+        <a href="../index.html" class="brand-logo"><img src="../images/daniel_logo_vector.svg" alt="logo">
+        </a>
+    </div>
+    
+    <nav>
+    <ul>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    
+    </ul>
+  </nav>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+
+</header>
+
+<body>
+    <div class="port-container">
+        <div class="port-left-section">
+            <h1>Analytics Capstone Project &mdash; Data Analytics Tool</h1>
+            <h2>
+                For my capstone project, we worked with a leading video game company to
+                streamline the player id retrieval process such that players can be invited for upcoming playtests.</h2>
+        </div>
+        <div class="port-right-section">
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion1" checked>
+                <label class="accordion-title" for="accordion1">Problem</label>
+                <div class="accordion-content">
+                   <li> The turnaround time for Project Managers from requesting to receiving 
+                      player IDs from a central team can take between 1-2 weeks </li>
+                    <li>It is time-consuming for Data Analysts to understand the specific player
+                    demographics that the Research Project Managers are looking to invite </li>
+                    <li>Project Managers cannot directly access player data themselves due to a variety of reasons 
+                        (i.e. player privacy data)
+                         </li>
+                 How might we improve this?
+                    <!-- Content for Accordion Item 1 -->
+                </div>
+
+
+            </div>
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion2">
+                <label class="accordion-title" for="accordion2">Users</label>
+                <div class="accordion-content">
+                    <li> Project Managers, Research Team, Central Analytics team</li>
+                    <!-- Content for Accordion Item 2 -->
+                </div>
+            </div>
+            <!-- Add more accordion items as needed -->
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion3">
+                <label class="accordion-title" for="accordion3">Goals</label>
+                <div class="accordion-content">
+                    <li>Reduce turnaround time for player ID retrievals</li>
+                    <li>Reduce the amount of time spent for this type of reoccuring task</li>
+                    <li>Create an efficient solution that can streamline this process</li>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion4">
+                <label class="accordion-title" for="accordion4">Team</label>
+                <div class="accordion-content">
+                    <p>team of 4, consisting of a Data Scientist/Engineer, Project Manager,
+                    Business Analyst, and me
+                    </p>
+                    <p>My roles: UX testing, User Research, and Product Management
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion5">
+                <label class="accordion-title" for="accordion5">Results</label>
+                <div class="accordion-content">
+                <p>Received very positive feedback and enthusiasm from Project Managers for this project,
+                    as well as with the analytics team we worked directly with
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="img-container">
+        <img src="../images/analytics-tool.svg" alt="Image Description" class="img-responsive" id="rotateImage">
+    </div>
+        
+
+
+    <div class="textcontainer">
+        <div class="textcontainer-left">
+            <h1>Imagine This</h1>
+            <h2>
+        </div>
+        <div class="textcontainer-right">
+
+            <p>You are a Research Project Manager responsible for managing a playtest/user research session with the goal of collecting feedback 
+                about an upcoming feature. Your objective is to understand how players precisely feel about the feature, and the
+                 most effective way to achieve this is by reaching out to current players interested in beta testing unreleased features.
+                  The current process involves obtaining a list of playerIDs, which they insert into another
+                  tool which will then email players if they 
+                  may be interested in trying this up and coming feature, while also being compensated for their time.</p>
+            
+            <p>However, the only way you can access the list of playerIDs is by contacting the central analytics team and scheduling a 
+                meeting with them to describe your demographics so that they can execute an SQL query 
+                on the database to access this information.</p>
+            
+            
+            <p>You cannot directly access the central player database due to legal data privacy reasons. 
+                The central analytics team serves as a safeguard for the company to ensure compliance. 
+                Consequently, it can take up to 1-2 weeks to process this request.
+            </p>
+
+            <p>For the central analytics team, they provide support for over 20 other game titles, each of which has 
+                its own Research Project Managers responsible for conducting their playtest and user research sessions. 
+                Currently, writing SQL queries to generate playerIDs
+                is considered a necessary, albeit less preferred, reocurring task for the central analytics team in the current
+                working process for the company. The team would prefer to spend their resources on generating impactful
+                insights from data.
+
+            </p>
+
+        </div>
+    </div>
+
+    <section>
+        <div class="portfoliomargins">
+            <h1>
+                How might we:                    </h1>    
+
+                    <li>
+                    Reduce the turnaround time it takes for Project Managers to get PlayerIDs?
+                    </li>
+                    <li>
+                    Reduce the amount of workload from the central analytics team from doing this task?
+                    </li>
+                    <li>
+                    Ensure data compliance?
+                    </li>    
+
+
+
+
+        <h1>1. Research Methodology & Solution Development</h1>
+        <p>
+        We worked closely with 4 Project Managers and 2 members from the central analytics team when developing a prototype design.
+        Our development process proceeded as follows:
+
+        <li>
+            Exploratory Interviews with Project Managers to understand the specific use cases
+        </li>
+        <li>
+            Lo-fi Mockup
+        </li>    
+        
+        <li>
+           Internal testing and critique with central analytics team
+        </li>    
+        
+        <li>
+            Hi-fi Prototype Design v1
+        </li>    
+        
+        <li>
+            Internal testing and critique with central analytics team round 2
+    
+        </li>
+            
+        <li>
+            Hi-fi Prototype Design v2
+        </li>  
+    
+        <li>
+            User Testing 
+        </li>
+    
+    
+        <li>
+            Hi-fi Prototype Design v3
+        </li>  
+          
+        <li>
+            User Testing round 2
+        </li>
+        </p>
+    
+
+
+
+    
+    <h1>2. Personas</h1>
+    <p>
+From working with our stakeholders, we identified two primary personas that are directly affected by this inefficiency. 
+As a group, we decided that the best way forward was to develop a self-service interface for project managers to use.
+</p>
+
+
+        <div class="img-container">
+            <img src="../images/analytics-tool-personaA.png" alt="Image Description" class="img-responsiveport">
+        </div>
+        <div class="img-container">
+            <img src="../images/analytics-tool-personaB.png" alt="Image Description" class="img-responsiveport">
+        </div>
+
+
+    <h1>3. Top 3 Research Findings</h1>
+    <p>
+        1. Most playerid data requests can be loosely summarized as 70% basic, 20% intermediate, and 10% advanced complexity
+        of demographics. Project Managers have estimated that this self-service tool can cover a majority
+         of the basic and intermediate requests (between 70-90% of all data requests).
+         <li>            Basic requests tend to contain common variables and inclusions. I.e. <br> 
+                (Game="Some_Game_Name" AND Country="United States" AND GameTime>500hours AND Level>100)
+        </li>
+
+        <li>            Intermediate queries tend to include many exclusions and OR states<br>
+
+                (Game = 'Some_Game_Name' AND Country = 'Canada' AND GameTime > 500 AND Level > 100) or<BR>
+                (Game = 'Some_Game_Name' AND Country = 'United States' AND City NOT IN ('NewYork', 'Dallas',
+                 'Chicago', 'NewOrleans', 'Boston')
+                AND GameTime > 500 AND Level > 100);
+         </li>  
+
+    <p>
+        2. There are deadlines and time constraints for when a playtest/user research session occurs. So, 
+        Research Project Managers may selectively decide and request for a less-than-ideal player demographic because they
+        know what to expect from it. The risk of generating a bad-sample size can be catastrophic due to turnaround times.
+    </p>
+    
+    <p>
+       3.  Most playerID data requests are very basic and can be specified within the following parameters of
+        Game, Language, Location, Playtime, and some unique variables (e.g., game modes).
+    </p>
+
+    <h1>
+       4. Requirements
+    </h1>
+
+    <p>
+    From the interviews conducted with several employees, we created a list of basic requirements as shown below.
+    </p>
+
+    <div class="img-container">
+    <img src="../images/analytics-tool-requirements.png" alt="Image Description" class="img-responsiveport">
+    </div>
+
+<h1>
+   5. Benefits
+</h1>
+<li>
+    Decreasing PlayerID retrieval turnaround times from more than 7 days to less than 1 day
+</li>
+<li>
+    Low Estimate of Saving $72,000/year from this one task.<br>
+    (Per Year: 30Game titles X 6 research projects per Gametitle X 3 hours per request x $150/hour= $72,000)
+</li>
+<li>
+    Greater flexibility from Project Managers on selecting player demographics 
+</li>
+
+<div class="img-container">
+    <img src="../images/comparison.png" alt="Image Description" class="img-responsiveport">
+</div>
+
+
+<h1>6. Reflections & Takeaways</h1>
+
+<p>
+    If we had a few more months to work on this, I am confident that we could have translated the designs into code,
+    and built a fully functional product. With the solution we proposed, we expect to
+    reduce turnaround times, save an estimated $72,000 annually, and give 
+    Project Managers more flexibility in selecting player demographics.
+</p>
+    <p>
+    But what truly resonates with me is not what we managed to come up with, but rather the transformation I witnessed in our team members. 
+    We evolved into adept problem solvers and enthusiastic self-learners, and that growth was genuinely inspiring.
+</p>
+<p>
+    As I reflect on this journey, I realize it wasn't just a professional endeavor; it was 
+    a personal one as well. It taught me the vital importance of truly understanding user needs, 
+    mastering the art of crafting user-friendly solutions, and experiencing the empowering effect of self-service tools.
+</p>
+
+<p>
+    This experience isn't just a project; it's a living testament to the incredible potential that technology has when 
+    we create solutions with it. It reaffirms my belief in the profound
+     impact of continuous learning, especially in the ever-evolving landscape of tech.
+    
+    </p>
+</div>
+
+</section>
+
+
+
+</body>
+
+
+<footer class="my-footer">
+    <h1 class="footer-h1"> Designed by Dan and coded with the assistance of online resources 🎈</h1>
+    <!-- Add other footer content here -->
+</footer>
+</html>

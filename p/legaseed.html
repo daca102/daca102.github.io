@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daniel Chen's Portfolio</title>
+	<link rel="stylesheet" href="../css/main.css">
+
+
+	<!-- font from Adobe Fonts sofia pro --->
+	<link rel="stylesheet" href="../css/sofiapro.css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
+
+	<!-- font from Google Font (IBM Plex Sans)-->
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+	
+	<!--Tutorial from https://www.youtube.com/watch?v=kEf1xSwX5D8-->
+	<link rel="shortcut icon" type="image/png" href="../images/web_icon.png">
+
+    <script src="javascript/hovereffect.js" defer ></script>
+    <script src="../javascript/casestudies.js" defer></script>
+    <meta name="robots" content="noindex">
+
+
+</head>
+<style>
+</style>
+
+<header id="myHeader">
+    <div class="logo">
+        <a href="../index.html" class="brand-logo"><img src="../images/daniel_logo_vector.svg" alt="logo">
+        </a>
+    </div>
+    
+    <nav>
+    <ul>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    
+    </ul>
+  </nav>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+
+</header>
+
+<body>
+    <div class="port-container">
+        <div class="port-left-section">
+            <h1>Legaseed            </h1>
+            <h2>
+                For my undergraduate product management class, we worked with an early stage startup to
+                establish a product direction. Legaseed aims to be a service that can provide a digital legacy
+                for one's life after their passing.
+            </h2>
+        </div>
+        <div class="port-right-section">
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion1" checked>
+                <label class="accordion-title" for="accordion1">Problem</label>
+                <div class="accordion-content">
+                    <li>
+                        Most stories are shared in real-life context settings and are not digitally captured
+                    </li>
+                    <li>
+                        Any meaningful stories that are captured through writing, audio, or video, are not 
+                        stored securely or centrally so all family members today and in the future can access them.
+                    </li>
+                    <li>
+                        Older adults have limited opportunity to pick and choose their most meaningful stories 
+                        in real life context situations
+                         </li>
+                </div>
+
+
+            </div>
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion2">
+                <label class="accordion-title" for="accordion2">Users</label>
+                <div class="accordion-content">
+                    <li>
+                        People near death 
+                    </li>
+                    <li>
+                        Close family members
+                    </li>
+                    <li>
+                        Family and Friends
+                    </li>
+                    <!-- Content for Accordion Item 2 -->
+                </div>
+            </div>
+            <!-- Add more accordion items as needed -->
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion3">
+                <label class="accordion-title" for="accordion3">Goals</label>
+                <div class="accordion-content">
+                    <li>To create a prototype based on primary research</li>
+                    <li>To understand whether there is a market for this</li>
+                    <li>To understand how we might attract users</li>
+
+                </div>
+            </div>
+
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion4">
+                <label class="accordion-title" for="accordion4">Team</label>
+                <div class="accordion-content">
+                    <p>Group of 4 students
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <input type="checkbox" class="accordion-toggle" name="accordion" id="accordion5">
+                <label class="accordion-title" for="accordion5">Time Frame</label>
+                <div class="accordion-content">
+                <p> 2 months
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="img-container">
+        <img src="../images/legacytree.jpg" alt="Image Description" class="img-responsive" id="rotateImage">
+    </div>
+        
+
+
+    <div class="textcontainer">
+        <div class="textcontainer-left">
+            <h1>Imagine This</h1>
+            <h2>
+        </div>
+        <div class="textcontainer-right">
+
+            <p>
+                You are 74 years old, and you know that your time is coming to an end soon.
+
+                You have a daughter who is 45 years old with her own family living in the city, while you remain in the suburbs.
+                The only time you do see her and your children is during the holidays. Your daughter cherishes you, and you regularly
+                keep in touch with her and have conversations over the phone.
+                You treasure your family and your friends, and you have a desire to leave a memory of who you were when you pass away.
+                There are stories that you have never had the chance to tell, because the timing and situation has never been right.
+                But, those were the ones that defined who you were.
+            </p>
+            
+        </div>
+    </div>
+
+    <section>
+        <div class="portfoliomargins">
+    
+        <h1>1. User Interviews</h1>
+    <p>We conducted conversational interviews for 8 people belonging to the 65+ year old demographic and 8 people between 40-65.
+ We asked them open-ended questions regarding family dynamics, and how important stories were. 
+    </p>
+
+    <p>
+        Some interesting common findings we found from the 65+ year old category were:
+        <li>
+          that they like to share their personal stories
+        </li>
+
+        <li>
+            they have stated similar statements along the lines that "I need to pick and choose which
+            stories to tell" because their grandchildren are too young and may not understand it
+        </li>
+        
+        
+        <li>
+            They value their family and what they think of them even after they pass away    
+        </li>
+    </p>
+
+    <p>
+        Some interesting findings we found from the 40-65 year old category were:
+        <li>
+           Those that have experienced death in the families, they wish they had a more tangible piece of their loved ones
+        </li>
+        <li>
+            They wish they knew more about the their grandparent's life stories and who they were
+        </li>
+
+        <li>
+            They appreciate the value of imparting life stories, especially those from their grandparents and parents
+        </li>
+    </p>
+    
+
+<p>
+    At the very end, we introduced them to this service, and asked them if it was something they were interested in, and if they 
+    would pay for it.
+
+    We found that:
+
+    <li>
+        A majority of our interviewees would pay for it, and many of them compared this to a memorial photo album
+    </li>
+
+    <li>
+        There would be some difficulty in having the eldery user setting it up because technology is hard, and they would
+        require a helping hand in digitalizing their lifestories. It would also feel awkward to be speaking about
+        the story alone, and it needs to  be a 2-way dialogue.
+    </li>
+    
+    <li>
+        Many of the surveyed 40-65 year olds have indicated that they would be willing to help set this up
+    </li>
+</p>
+
+    <h1>2. Personas</h1>
+    <p>
+        From our research, We devised two personas at the beginning which we will be referring to as the Champion and User Persona.
+        The Champion Persona is the one who will champion for and argue for its usage of the product. The User Persona
+        is the one who sees value and will be the one directly using it.
+    </p>
+        <div class="img-container">
+            <img src="../images/championpersona.png" alt="Image Description" class="img-responsiveport">
+        </div>
+        <div class="img-container">
+            <img src="../images/userpersona_leg.png" alt="Image Description" class="img-responsiveport">
+        </div>
+
+<h1>3. User Stories</h1>
+<p>From our user interviews, we have found that technology is a barrier, and it would require work from both the Champion and User
+    Persona in order to establish a digitalized repository. This repository will act akin to a memorial album but with
+    videos of the person sharing their life stories. The user stories below describe the minimum functionalities required
+ such that the Champion Persona can interview the User Persona for lifestories and view it afterwards.
+</p>
+        </p>
+
+            <div class="img-container">
+                <img src="../images/legaseed-US.png" alt="Image Description" class="img-responsiveport">
+            </div>
+
+            <div class="img-container">
+                <img src="../images/legacy-US2.png" alt="Image Description" class="img-responsiveport">
+            </div>
+
+
+
+    
+        <h1>4. Lo-Fi Wireframe</h1>
+
+        <p>
+            We created a wireframe based upon the research and user stories as shown below.
+        </p>
+
+        <div class="img-container">
+            <img src="../images/legaseed-wireframe.png" alt="Image Description" class="img-responsive2">
+        </div>
+
+
+
+<h1>5. Is there a market for this? </h1>
+
+
+<p>
+    Probably! As a comparable, Shutterfly sells physical photobooks with a wide range between $30-$100 each but not
+    specific towards any niche. 
+</p>
+
+<p>
+    We also conducted a short online survey (sample size = 210) asking if
+    they may be interested in potentially purchasing a digital photo album that can digitalize their parents' videos and photos. 
+    <li>  57% of the people stated that they would be interested in a product like this.
+    </li>
+    <li>
+        Of the 57% (120 people), we asked them "What is the maximum price they might pay for this service? on a reocurring basis?" with several options
+        which were $0.99/month, $1.99/month, $2.99/month and $3.99, and other. Our data showed that 78% (93/120)  
+        were willing to spend more than more than $2.99/month.
+
+    </li>
+</p>
+<p>
+    From the survey results, we have found that there is definitely a market for this, and further price experimentation is required
+    to understand the consumers willingness-to-pay.
+    </p>
+
+
+<h1>6. Marketing</h1>
+
+
+    <p>
+
+        To ensure the success of Legaseed, it's imperative that both the Champion and User personas express interest in our service.
+
+   To address this, we propose a two-pronged marketing approach when trying to invite users to the platform.
+   </p>
+       
+   <p>        User-Centric Strategy: Our first strategy focuses on the users. We plan to collaborate with channel partners 
+    to raise awareness about Legaseed. This involves hosting live group sessions to introduce potential end-users to the product
+     and distributing informative brochures. We will target locations like Retirement and Assisted Living homes, hospitals,
+      terminal illness support groups, and senior travel groups.
+      
+    
+   </p>
+
+   <p>     Champion-Centric Strategy: Our second strategy targets the Champion persona. We will leverage digital video
+     ads on platforms like Instagram, YouTube, Facebook, and Pinterest. Our ads will be tailored to resonate with women
+      aged 40-65 residing in areas with higher household incomes. The messaging will emphasize the importance of passing down
+       family stories to their children. We'll also explore opportunities to feature in newsletters sent by our channel partners
+        to the Champion.
+    </p>
+    <p>
+        By implementing this two-pronged marketing and sales approach, we aim to educate both our User and Champion 
+        personas about Legaseed, fostering a greater likelihood of product adoption.
+    </p>
+
+<h1>7. Reflections & Takeaways</h1>
+
+<p>
+
+
+    Reflecting on this project from a product management perspective, I've gained valuable insights into the
+     intricacies and responsibilities that come with developing 0-1 products. Here are some key takeaways:
+</p>
+
+<p>
+    Research played a pivotal role in shaping our product strategy. Market research helped us understand 
+    the video legacy market niche and identify potential gaps and competitors. User research involved interviews
+     and surveys, enabling us to empathize with our users' frustrations and needs. This phase underscored the i
+     mportance of data-driven decision-making and the power of user insights in product development.
+
+    </p> 
+
+     <p>
+        MVP (Minimum Viable Product):
+      Creating an MVP was a strategic approach that resonated with me. It allowed us to build a product with essential
+       features while leaving room for iteration based on user feedback. The MVP features, such as story sharing and 
+       question prompts, demonstrated the practical application of this concept. It reinforced the idea that a product
+        doesn't need to be perfect from the start but should address core user needs.    
+     </p>
+    
+
+    <p>
+    Go-To-Market Strategy: The go-to-market plan outlined in the project highlights the significance of tailoring marketing 
+    and sales strategies to different user personas, and how multiple marketing strategies are often in place simultaneously.
+    </p>
+    
+
+    
+    
+</div>
+</section>
+
+<footer class="my-footer">
+    <h1 class="footer-h1"> Designed by Dan and coded with the assistance of online resources 🎈</h1>
+    <!-- Add other footer content here -->
+</footer>
+</body>
+    
+</html>
