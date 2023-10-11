@@ -21,8 +21,8 @@
 const img = document.getElementById('rotateImage');
 
 // Define the initial and final rotation angles
-const initialRotation = -2; // Initial rotation angle (0 degrees)
-const finalRotation = 1; // Final rotation angle (5 degrees)
+const initialRotation = 0; // Initial rotation angle (0 degrees)
+const finalRotation = 2; // Final rotation angle (5 degrees)
 
 // Calculate the range of mouse scroll positions where rotation should occur
 const startScrollPosition = 200; // Start rotating immediately as the mouse scrolls
